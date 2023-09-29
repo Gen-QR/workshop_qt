@@ -33,6 +33,7 @@ class MyApp(QMainWindow):
 
         my_label = QLabel("Look at all of these cool widgets!")
         my_label.setStyleSheet("font-size: 16px; font-weight: bold;")
+
         layout.addWidget(my_label)
 
         widgets = [
@@ -63,17 +64,6 @@ class MyApp(QMainWindow):
         # Set the central widget of the Window. Widget will expand
         # to take up all the space in the window by default.
         self.setCentralWidget(widget)
-
-        # Create a label
-        self.label = QLabel('Welcome to PySide2 Workshop!', self)
-        self.label.setGeometry(10, 10, 380, 30)  # Set the label's position and size
-
-        # Create a button
-        self.button = QPushButton('Click Me', self)
-        self.button.setGeometry(10, 50, 100, 30)  # Set the button's position and size
-
-        # Connect the button click event to a function
-        self.button.clicked.connect(self.show_message)
 
     def show_message(self):
         self.label.setText('Button Clicked!')

@@ -1,4 +1,4 @@
 pip install PySide2
 
 run
-    `python main.py`
+    `python <filename>.py`
